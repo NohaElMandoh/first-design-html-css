@@ -1,0 +1,922 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 2000px;
+    font: 400 15px/28px "Poppins", sans-serif
+}
+
+.clear {
+    clear: both;
+}
+
+.header {
+
+    background-color: #001D23;
+
+    height: 80px;
+    width: 100%;
+    padding: 0px 100px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+
+/* .logo img {
+
+    height: 80px;
+    width: 150px;
+    float: left;
+
+} */
+
+.header ul {
+
+    list-style: none;
+    float: right;
+    line-height: 80px;
+
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.header ul li>a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.logo {
+    float: left;
+    margin-top: 25px;
+}
+
+.logo_header {
+    text-decoration: none;
+
+}
+
+.logo_title {
+    color: #FF6F0F;
+
+}
+
+.logo_span {
+    color: white;
+}
+
+/* ---------Start main section style--------------- */
+.main {
+
+
+    background-image: url(../images/imgs/carousel-1.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(1, 29, 43, 0.7);
+
+}
+
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.main-title {
+
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 35px;
+
+}
+
+.main-desc {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 25px;
+    margin-bottom: 35px;
+    line-height: 40px;
+}
+
+.btn {
+    width: 150px;
+    padding: 16px 0px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-learn {
+    background-color: #ff6f0f;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.main-content .btn:hover {
+    /* opacity: 0.6 ; */
+    background-color: rgba(214, 86, 0, 0.7);
+}
+
+/* ---------end main section style--------------- */
+.container {
+
+    width: 100%;
+    margin: auto;
+
+}
+
+/* ---------Start service section style--------------- */
+
+.service_h1,
+.cause_h1,
+.about_h1,
+.features_h1,
+.team_h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 34px;
+
+}
+
+.service_under_line,
+.cause_under_line,
+.about_under_line,
+.goals_under_line,
+.features_under_line,
+.team_under_line {
+    width: 20%;
+    background-color: #ff6f0f;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.service_content,
+.cause_section,
+.about_section,
+.features_content {
+    width: 100%;
+    height: 400px;
+    padding: 35px 50px;
+    overflow: hidden;
+    text-align: center;
+
+
+}
+
+.service_item,
+.cause_item,
+.about_item,
+.features_item {
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 1px solid #888;
+    text-align: left;
+    padding: 20px 25px;
+
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.service_item {
+    text-align: center;
+}
+
+.service_content .middle,
+.cause_content .middle,
+.about_content .middle,
+.features_content .middle {
+    margin: 0 5%;
+}
+
+.item_image {
+
+    margin-bottom: 10px;
+
+}
+
+.item_title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.item_desc {
+
+    font-size: 18px;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+}
+
+.service-btn {
+    border: 1px solid #FF6F0F;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    z-index: 5;
+}
+
+.service-btn:hover {
+
+    background-color: #FF6F0F;
+    color: white;
+}
+
+.service_item:after {
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(24, 23, 23);
+    opacity: 0;
+}
+
+.service_item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+/* ---------end service section style--------------- */
+
+/* --------- start cause section---------- */
+.cause-section {
+
+    background-color: #0000001a;
+    height: 1150px;
+    padding: 35px 50px;
+
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.cause-section p {
+    color: black;
+    font-size: 18px;
+}
+
+.cause_content img {
+
+    width: 100%;
+    height: 20%;
+
+}
+
+.cause_item {
+    margin-bottom: 25px;
+}
+
+.info {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+}
+
+.cause_item:hover .info {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.info .details {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.info .main-title {
+
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s, opacity .5s;
+    transition-delay: .4s;
+
+}
+
+.info .main-desc {
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 18px;
+    line-height: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s, opacity .5s;
+    transition-delay: .4s;
+}
+
+.info .btn {
+    width: 120px;
+    padding: 16px 0px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.info .btn-learn {
+    background-color: #ff6f0f;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.info a {
+    display: inline-block;
+    width: 60px;
+    height: 80px;
+    color: #FF6F0F;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s, opacity .5s;
+    transition-delay: .6s;
+}
+
+.cause_item:hover .info .main-title,
+.cause_item:hover .info a,
+.cause_item:hover .info .main-desc {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ---------end cause section---------- */
+/* ---------start about section---------- */
+.about-section {
+
+    padding: 35px 50px;
+    margin-top: 15px;
+    text-align: left;
+
+}
+
+.about_content,
+.cause_content {
+
+    margin-top: 30px;
+
+}
+
+.about_item {
+    padding-left: 100px;
+}
+
+.about-section .item_image {
+
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 15px;
+    top: 26px;
+    color: #6195ff;
+
+}
+
+
+
+.about_item:after {
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(24, 23, 23);
+    opacity: 0;
+}
+
+.about_item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+/* ---------end about section---------- */
+/* ---------start goals section---------- */
+.goals {
+
+    padding: 35px 50px;
+    margin-top: 70px;
+    text-align: left;
+    height: 600px;
+    background-color: #0000001a;
+}
+
+.goals_info {
+
+    width: 50%;
+    float: left;
+    padding: 100px 50px;
+}
+
+.goals_image {
+    padding-top: 50px;
+    width: 50%;
+    text-align: center;
+    float: right;
+
+}
+
+.goals_image img {
+
+    width: 50%;
+    height: auto;
+    margin-left: 10px;
+
+}
+
+.goals_info p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.goals_info ul {
+    margin-top: 30px;
+}
+
+.goals_info ul li {
+    list-style: none;
+    line-height: 15px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.goals_under_line {
+
+    margin-left: 10px;
+
+}
+
+.bullets_list {
+    list-style: none;
+    text-align: center;
+}
+
+.bullets_list li {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+
+.bullets_list li.active {
+    background-color: #FF6F0F;
+}
+
+.bullets_list li:hover {
+    background-color: #FF6F0F;
+}
+
+/* ---------end about section---------- */
+/* ---------start counters section---------- */
+.counters,
+.donate_section {
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.counters {
+
+    height: 300px;
+    background-image: url(../Images/imgs/background.jpeg);
+
+}
+
+.counters .overlay,
+.donate_section .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(1, 29, 43, 0.9);
+}
+
+.items {
+    height: 200px;
+    width: 80%;
+    margin: 100px auto;
+
+}
+
+.item {
+    height: 200px;
+    width: 20%;
+    float: left;
+    text-align: center;
+    /* background-color: white; */
+
+}
+
+.icon {
+    margin-bottom: 15px;
+
+
+}
+
+
+/* ---------end counters section---------- */
+
+/* ---------start features section---------- */
+
+
+.features_under_line {
+    width: 10%;
+
+}
+
+.features-section {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 50px;
+
+}
+
+.features_item {
+    width: 30%;
+
+    float: left;
+    text-align: center;
+    border: 1px solid #888;
+    text-align: left;
+    padding: 20px 25px;
+
+    margin-bottom: 25px;
+}
+
+.features_item {
+    text-align: center;
+}
+
+.features_content {
+    height: 500px;
+}
+
+.feature_goal {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ff6f0f;
+    border-radius: 50%;
+    margin: auto;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.feature_goal h1 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.features_item .item_title {
+    color: #ff6f0f;
+    margin-bottom: 30px;
+}
+
+
+
+.features_item .item_desc {
+
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.features_item .btn-learn {
+
+    margin-top: 30px;
+}
+
+.features-btn:hover {
+
+    background-color: #FF6F0F;
+    color: white;
+}
+
+.features_item:after {
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(24, 23, 23);
+    opacity: 0;
+}
+
+.features_item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+/* ---------end features section---------- */
+/* ---------start counters section---------- */
+
+.donate_section {
+
+    margin-top: 100px;
+    height: 600px;
+    width: 100%;
+    background-image: url(../Images/imgs/carousel-2.jpg);
+    overflow: hidden;
+
+}
+
+.donate_items {
+
+    padding: 80px 200px;
+}
+
+.donate_section .donate_info {
+
+    height: 300px;
+    width: 50%;
+    float: left;
+    padding-right: 50px;
+}
+
+.donate_info h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+}
+
+.donate_info p {
+
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.donate_section .donate_form {
+
+    padding: 50px;
+    height: 400px;
+    width: 50%;
+    background-color: white;
+    float: right;
+
+}
+
+.donate_form input {
+
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border: 2px solid #888;
+    border-radius: 20px;
+
+}
+
+.donate_form input:hover {
+
+    border: 1px solid #FF6F0F;
+
+}
+
+.lables {
+
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.price_item {
+
+    float: left;
+    height: 50px;
+    width: 30%;
+    background-color: #f9f9fa;
+    border: 1px solid gray;
+    color: black;
+    text-align: center;
+
+}
+
+.price_item:hover {
+
+    border: 1px solid #FF6F0F;
+
+}
+
+.lables .middle {
+
+    margin: 0 20px;
+}
+
+.btn-donate {
+
+    width: 100%;
+
+    margin-top: 30px;
+}
+
+/* ---------end counters section---------- */
+/* ---------start team section---------- */
+.team-content {
+    padding: 0 200px;
+    margin-top: 70px;
+    text-align: left;
+    height: 600px;
+    width: 100%;
+}
+
+.team-item {
+    float: left;
+
+    width: 20%;
+
+    text-align: center;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+.team-img {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.team-img img {
+    width: 100%;
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.team-item:hover .team-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.team-overlay a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #FF6F0F;
+    color: #fff;
+    margin-left: auto;
+}
+
+.team-overlay a i {
+    line-height: 45px;
+}
+
+.team-info-title {
+    text-transform: capitalize;
+    padding: 10px 0px;
+    color: #FF6F0F;
+}
+
+.team-info-p {
+    color: rgb(80, 79, 79);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+
+.team-item:after {
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    right: 0;
+
+    background-color: rgb(24, 23, 23);
+    opacity: 0;
+}
+
+.team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+/* ---------end team section---------- */
+.footer {
+    height: 300px;
+    text-align: center;
+    background-color: #001D23;
+
+}
+
+.logo_footer {
+
+    text-decoration: none;
+
+}
+
+.footer .logo_title {
+    padding-top: 100px;
+}
+
+.footer ul {
+
+    list-style: none;
+
+    line-height: 80px;
+
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.footer ul li>a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.footer p {
+
+    color: rgb(80, 79, 79);
+    font-size: 18px;
+    margin-top: 10px;
+}
